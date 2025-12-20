@@ -12,7 +12,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.edyn_quizz"
+    namespace = "com.josefgull.mathquiz"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
