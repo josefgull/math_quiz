@@ -1,6 +1,6 @@
 {
-    "name": "edyn_quizz",
-    "short_name": "edyn_quizz",
+    "name": "Math Quiz",
+    "short_name": "Math Quiz",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
