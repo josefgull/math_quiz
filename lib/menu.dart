@@ -35,17 +35,17 @@ final Folder rootMenu = Folder(
       name: 'Topics',
       subfolders: [
         Folder(
-          name: 'arithmetic',
+          name: 'Simple Arithmetic',
           files: [
             FileNode(name: 'Addition', getQuestions: () => plusminusQuestions),
           ],
         ),
         Folder(
-          name: 'else',
+          name: 'Other Topics',
           files: [
-            FileNode(name: 'fractions.dart', getQuestions: () => fractionsQuestions),
-            FileNode(name: 'roots.dart', getQuestions: () => rootsQuestions),
-            FileNode(name: 'exponentials.dart', getQuestions: () => exponentialsQuestions),
+            FileNode(name: 'Fractions', getQuestions: () => fractionsQuestions),
+            FileNode(name: 'Roots', getQuestions: () => rootsQuestions),
+            FileNode(name: 'Exponentials', getQuestions: () => exponentialsQuestions),
           ],
         ),
       ],
