@@ -97390,7 +97390,7 @@ i=j[2]
 h=[400*d/(d+27.13),400*c/(c+27.13),400*i/(i+27.13)]
 return new A.ajQ(l,(40*h[0]+20*h[1]+h[2])/20*k,k,k,a1,1,q,m,A.It(m,0.25),1.48+e)})
 s($,"b20","aJ_",()=>{var q=t.RB,p=t.C3
-return A.a5T(B.x5,"root",A.d([A.a5T(B.x5,"Topics",A.d([A.a5T(A.d([A.a5h(new A.auG(),"Addition")],q),"arithmetic",B.x6),A.a5T(A.d([A.a5h(new A.auH(),"fractions.dart"),A.a5h(new A.auI(),"roots.dart"),A.a5h(new A.auJ(),"exponentials.dart")],q),"else",B.x6)],p))],p))})
+return A.a5T(B.x5,"root",A.d([A.a5T(B.x5,"Topics",A.d([A.a5T(A.d([A.a5h(new A.auG(),"Addition")],q),"Simple Arithmetic",B.x6),A.a5T(A.d([A.a5h(new A.auH(),"Fractions"),A.a5h(new A.auI(),"Roots"),A.a5h(new A.auJ(),"Exponentials")],q),"Other Topics",B.x6)],p))],p))})
 s($,"b_c","aH_",()=>new A.Nb("newline expected"))
 s($,"b0S","aIg",()=>A.aE5(!1))
 s($,"b0T","aIh",()=>A.aE5(!0))
