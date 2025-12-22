@@ -48,4 +48,4 @@ app.*.map.json
 
 
 #credential files
-lib/config/credentials.dart
+#lib/config/credentials.dart
