@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'menu.dart';
 import 'styles.dart';
-import 'config/credentials.dart';
+//import 'config/credentials.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -86,7 +86,7 @@ class _QuizPageWithQuestionsState extends State<QuizPageWithQuestions> {
 
       // Banner initialisieren
     myBanner = BannerAd(
-      adUnitId: Config.admobBannerIdAndroid,
+      adUnitId: 'ca-app-pub-3940256099942544/6300978111',//Config.admobBannerIdAndroid,
       size: AdSize.banner,
       request: const AdRequest(),
       listener: BannerAdListener(
