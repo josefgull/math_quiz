@@ -6,6 +6,7 @@ import 'questions/arithmetic/l1_pm.dart';
 import 'questions/else/fractions.dart';
 import 'questions/else/roots.dart';
 import 'questions/else/exponentials.dart';
+import 'questions/Vectors_and_Linear_Algebra/Vector_calculus_questions.dart';
 
 /// Leaf node: a file representing a level/quiz
 class FileNode {
@@ -48,7 +49,13 @@ final Folder rootMenu = Folder(
             FileNode(name: 'Exponentials', getQuestions: () => exponentialsQuestions),
           ],
         ),
-      ],
+        Folder(
+          name: 'Vectors and Linear Algebra',
+          files: [
+            FileNode(name: 'Vector Calculus', getQuestions: () => Vector_calculusQuestions),
+          ],
+        ),
+      ],  
     ),
   ],
 );
