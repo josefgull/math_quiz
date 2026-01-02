@@ -50,75 +50,79 @@ class Folder {
   });
 }
 
-/// Build your static folder tree
 final Folder rootMenu = Folder(
-  name: 'questions',
+  name: 'root',
   subfolders: [
     Folder(
-      name: 'Algebra',
-      files: [
-        FileNode(name: 'Complex numbers questions', getQuestions: () => Complex_numbersQuestions),
-        FileNode(name: 'Exponents and logarithms questions', getQuestions: () => Exponents_and_logarithmsQuestions),
-        FileNode(name: 'Linear equations questions', getQuestions: () => Linear_equationsQuestions),
-        FileNode(name: 'Partial fractions questions', getQuestions: () => Partial_fractionsQuestions),
-        FileNode(name: 'Polynomials questions', getQuestions: () => PolynomialsQuestions),
-        FileNode(name: 'Quadratic equations questions', getQuestions: () => Quadratic_equationsQuestions),
-      ],
-    ),
-    Folder(
-      name: 'Arithmetic_Number_Theory',
-      files: [
-        FileNode(name: 'Basic operations questions', getQuestions: () => Basic_operationsQuestions),
-        FileNode(name: 'Fractions and ratios questions', getQuestions: () => Fractions_and_ratiosQuestions),
-        FileNode(name: 'Number properties questions', getQuestions: () => Number_propertiesQuestions),
-        FileNode(name: 'Squares and roots questions', getQuestions: () => Squares_and_rootsQuestions),
-      ],
-    ),
-    Folder(
-      name: 'Calculus',
-      files: [
-        FileNode(name: 'Applications questions', getQuestions: () => ApplicationsQuestions),
-        FileNode(name: 'Differentiation questions', getQuestions: () => DifferentiationQuestions),
-        FileNode(name: 'Integration questions', getQuestions: () => IntegrationQuestions),
-      ],
-    ),
-    Folder(
-      name: 'Geometry_and_Trigonometry',
-      files: [
-        FileNode(name: 'Coordinate geometry questions', getQuestions: () => Coordinate_geometryQuestions),
-        FileNode(name: 'Plane geometry questions', getQuestions: () => Plane_geometryQuestions),
-        FileNode(name: 'Solid geometry questions', getQuestions: () => Solid_geometryQuestions),
-        FileNode(name: 'Trigonometry questions', getQuestions: () => TrigonometryQuestions),
-      ],
-    ),
-    Folder(
-      name: 'Probability_and_Statistics',
-      files: [
-        FileNode(name: 'Distributions questions', getQuestions: () => DistributionsQuestions),
-        FileNode(name: 'Probability questions', getQuestions: () => ProbabilityQuestions),
-        FileNode(name: 'Statistics questions', getQuestions: () => StatisticsQuestions),
-      ],
-    ),
-    Folder(
-      name: 'Vectors_and_Linear_Algebra',
-      files: [
-        FileNode(name: 'Matrices and determinants questions', getQuestions: () => Matrices_and_determinantsQuestions),
-        FileNode(name: 'Vector calculations questions', getQuestions: () => Vector_calculationsQuestions),
-        FileNode(name: 'Vector calculus questions', getQuestions: () => Vector_calculusQuestions),
-      ],
-    ),
-    Folder(
-      name: 'arithmetic',
-      files: [
-        FileNode(name: 'l1 pm', getQuestions: () => plusminusQuestions),
-      ],
-    ),
-    Folder(
-      name: 'else',
-      files: [
-        FileNode(name: 'exponentials', getQuestions: () => exponentialsQuestions),
-        FileNode(name: 'fractions', getQuestions: () => fractionsQuestions),
-        FileNode(name: 'roots', getQuestions: () => rootsQuestions),
+      name: 'questions',
+      subfolders: [
+        Folder(
+          name: 'Algebra',
+          files: [
+            FileNode(name: 'Complex numbers questions', getQuestions: () => Complex_numbersQuestions),
+            FileNode(name: 'Exponents and logarithms questions', getQuestions: () => Exponents_and_logarithmsQuestions),
+            FileNode(name: 'Linear equations questions', getQuestions: () => Linear_equationsQuestions),
+            FileNode(name: 'Partial fractions questions', getQuestions: () => Partial_fractionsQuestions),
+            FileNode(name: 'Polynomials questions', getQuestions: () => PolynomialsQuestions),
+            FileNode(name: 'Quadratic equations questions', getQuestions: () => Quadratic_equationsQuestions),
+          ],
+        ),
+        Folder(
+          name: 'Arithmetic_Number_Theory',
+          files: [
+            FileNode(name: 'Basic operations questions', getQuestions: () => Basic_operationsQuestions),
+            FileNode(name: 'Fractions and ratios questions', getQuestions: () => Fractions_and_ratiosQuestions),
+            FileNode(name: 'Number properties questions', getQuestions: () => Number_propertiesQuestions),
+            FileNode(name: 'Squares and roots questions', getQuestions: () => Squares_and_rootsQuestions),
+          ],
+        ),
+        Folder(
+          name: 'Calculus',
+          files: [
+            FileNode(name: 'Applications questions', getQuestions: () => ApplicationsQuestions),
+            FileNode(name: 'Differentiation questions', getQuestions: () => DifferentiationQuestions),
+            FileNode(name: 'Integration questions', getQuestions: () => IntegrationQuestions),
+          ],
+        ),
+        Folder(
+          name: 'Geometry_and_Trigonometry',
+          files: [
+            FileNode(name: 'Coordinate geometry questions', getQuestions: () => Coordinate_geometryQuestions),
+            FileNode(name: 'Plane geometry questions', getQuestions: () => Plane_geometryQuestions),
+            FileNode(name: 'Solid geometry questions', getQuestions: () => Solid_geometryQuestions),
+            FileNode(name: 'Trigonometry questions', getQuestions: () => TrigonometryQuestions),
+          ],
+        ),
+        Folder(
+          name: 'Probability_and_Statistics',
+          files: [
+            FileNode(name: 'Distributions questions', getQuestions: () => DistributionsQuestions),
+            FileNode(name: 'Probability questions', getQuestions: () => ProbabilityQuestions),
+            FileNode(name: 'Statistics questions', getQuestions: () => StatisticsQuestions),
+          ],
+        ),
+        Folder(
+          name: 'Vectors_and_Linear_Algebra',
+          files: [
+            FileNode(name: 'Matrices and determinants questions', getQuestions: () => Matrices_and_determinantsQuestions),
+            FileNode(name: 'Vector calculations questions', getQuestions: () => Vector_calculationsQuestions),
+            FileNode(name: 'Vector calculus questions', getQuestions: () => Vector_calculusQuestions),
+          ],
+        ),
+        Folder(
+          name: 'arithmetic',
+          files: [
+            FileNode(name: 'l1 pm', getQuestions: () => plusminusQuestions),
+          ],
+        ),
+        Folder(
+          name: 'else',
+          files: [
+            FileNode(name: 'exponentials', getQuestions: () => exponentialsQuestions),
+            FileNode(name: 'fractions', getQuestions: () => fractionsQuestions),
+            FileNode(name: 'roots', getQuestions: () => rootsQuestions),
+          ],
+        ),
       ],
     ),
   ],

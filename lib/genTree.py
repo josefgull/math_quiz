@@ -36,7 +36,7 @@ def generate_folder(path: Path, indent=0) -> str:
         lines.append(f"{indent_str}  files: [")
         for file in files:
             name = file.stem.replace("_", " ")
-            getter = dart_safe_name(file.stem) + "Questions"
+            getter = dart_safe_name(file.stem)
             lines.append(
                 f"{indent_str}    FileNode(name: '{name}', getQuestions: () => {getter}),"
             )
