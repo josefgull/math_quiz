@@ -40,6 +40,7 @@ dependencies:
 flutter_icons:
   android: true
   ios: true
+  web: true
   image_path: "assets/icon/app_icon.png"
 
 dev_dependencies:
