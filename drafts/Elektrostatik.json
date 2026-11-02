@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Welche Aussage bezüglich dem normalen Vector \\(\\vec{n}_{1, 2}\\), welcher die Orientierung des Grenzübergangs festlegt, ist falsch?",
+    "answers": [
+      "$$ \\vec{n}_{1, 2} \\cdot [\\vec{E}]=[E_n] $$",
+      "$$ \\vec{n}_{1, 2} \\times [\\vec{D}]=[\\vec{D_t}] $$",
+      "$$ \\vec{n}_{1, 2} \\cdot \\vec{E}_{t, 2} = 0$$",
+      "$$ \\vec{n}_{1, 2} \\times \\vec{D}_{t, 2} =\\vec{0}$$"
+    ],
+    "correct": "$$ \\vec{n}_{1, 2} \\times \\vec{D}_{t, 2} =\\vec{0}$$"
+  },
+  {
+    "question": "Welche Aussage bezüglich dem normalen Vector \\(\\vec{n}_{1, 2}\\), welcher die Orientierung des Grenzübergangs festlegt, ist falsch?",
+    "answers": [
+      "$$ \\vec{n}_{1, 2} \\cdot [\\vec{D}]=[\\vec{D_n}] $$",
+      "$$ \\vec{n}_{1, 2} \\cdot E_{n, 1} = 0$$",
+      "$$ \\vec{n}_{1, 2} \\times [\\vec{E}]=[\\vec{E_t}] $$",
+      "$$ \\vec{n}_{1, 2} \\times \\vec{D}_{n, 2} =\\vec{0}$$"
+    ],
+    "correct": "$$ \\vec{n}_{1, 2} \\cdot E_{n, 1} = 0$$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die transversale Feldkomponente \\( E_t \\), wenn die Feldstärken vor und nach dem Sprung mit \\(\\vec{E}_{t, 1}\\) und \\(\\vec{E}_{t, 2}\\) gegeben sind?",
+    "answers": [
+      "$$ [\\vec{E}_t] = \\vec{E}_{t, 2} - \\vec{E}_{t, 1} = \\vec{0} $$",
+      "$$ [\\vec{E}_t] = \\vec{E}_{t, 1} - \\vec{E}_{t, 2} $$",
+      "$$ [\\vec{E}_t] = \\nabla \\times \\vec{E}_t $$",
+      "$$ [\\vec{E}_t] = \\vec{E}_{t, 2} + \\vec{E}_{t, 1} $$"
+    ],
+    "correct": "$$ [\\vec{E}_t] = \\vec{E}_{t, 2} - \\vec{E}_{t, 1} = \\vec{0} $$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die normale Feldkomponente \\( E_n \\), wenn die Feldstärken vor und nach dem Sprung mit \\(E_{n, 1}\\) und \\(E_{n, 2}\\) gegeben sind?",
+    "answers": [
+      "$$ [E_n] = E_{n, 1} - E_{n, 2} $$",
+      "$$ [E_n] = \\nabla \\cdot E_n $$",
+      "$$ [E_n] = \\frac{D_{n, 2}}{\\epsilon_2} - \\frac{D_{n, 1}}{\\epsilon_1} = \\sigma $$",
+      "$$ [E_n] = E_{n, 2} + E_{n, 1} $$"
+    ],
+    "correct": "$$ [E_n] = \\frac{D_{n, 2}}{\\epsilon_2} - \\frac{D_{n, 1}}{\\epsilon_1} = \\sigma $$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die tangentiale Feldkomponente \\( D_t \\), wenn die Feldstärken vor und nach dem Sprung mit \\(\\vec{D}_{t, 1}\\) und \\(\\vec{D}_{t, 2}\\) gegeben sind?",
+    "answers": [
+      "$$ [\\vec{D}_t] = \\epsilon_2\\vec{E}_{t, 2} - \\epsilon_1\\vec{E}_{t, 1} = 0 $$",
+      "$$ [\\vec{D}_t] = \\vec{D}_{t, 1} - \\vec{D}_{t, 2} $$",
+      "$$ [\\vec{D}_t] = \\nabla \\times \\vec{D}_t $$",
+      "$$ [\\vec{D}_t] = \\vec{D}_{t, 2} + \\vec{D}_{t, 1} $$"
+    ],
+    "correct": "$$ [\\vec{D}_t] = \\epsilon_2\\vec{E}_{t, 2} - \\epsilon_1\\vec{E}_{t, 1} = 0 $$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die normale Feldkomponente \\( D_n \\), wenn die Feldstärken vor und nach dem Sprung mit \\(D_{n, 1}\\) und \\(D_{n, 2}\\) gegeben sind?",
+    "answers": [
+      "$$ [D_n] = D_{n, 1} - D_{n, 2} $$",
+      "$$ [D_n] = \\nabla \\cdot \\vec{D}_n $$",
+      "$$ [D_n] = D_{n, 2} + D_{n, 1} $$",
+      "$$ [D_n] = D_{n, 2} - D_{n, 1} = \\sigma $$"
+    ],
+    "correct": "$$ [D_n] = D_{n, 2} - D_{n, 1} = \\sigma $$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die transversale Komponente des elektrostatischen Potentials \\( \\varphi \\), wenn das Potential vor und nach dem Sprung mit \\(\\varphi_{1}\\) und \\(\\varphi_{2}\\) gegeben ist?",
+    "answers": [
+      "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{1} - \\nabla_t \\varphi_{2} $$",
+      "$$ [\\nabla_t \\varphi] = \\nabla \\times \\nabla_t \\varphi $$",
+      "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{2} - \\nabla_t \\varphi_{1} = 0 $$",
+      "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{2} + \\nabla_t \\varphi_{1} $$"
+    ],
+    "correct": "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{2} - \\nabla_t \\varphi_{1} = 0 $$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die normale Komponente des elektrostatischen Potentials \\( \\varphi \\), wenn das Potential vor und nach dem Sprung mit \\(\\varphi_{1}\\) und \\(\\varphi_{2}\\) gegeben ist?",
+    "answers": [
+      "$$ [\\nabla_n \\varphi] = \\nabla_n \\varphi_{1} - \\nabla_n \\varphi_{2} $$",
+      "$$ [\\nabla_n \\varphi] = \\frac{\\nabla_n \\varphi_{2}}{\\epsilon_2} - \\frac{\\nabla_n \\varphi_{1}}{\\epsilon_1} = 0 $$",
+      "$$ [\\nabla_n \\varphi] = \\nabla \\cdot \\nabla_n \\varphi $$",
+      "$$ [\\nabla_n \\varphi] = \\nabla_n \\varphi_{2} + \\nabla_n \\varphi_{1} $$"
+    ],
+    "correct": "$$ [\\nabla_n \\varphi] = \\frac{\\nabla_n \\varphi_{2}}{\\epsilon_2} - \\frac{\\nabla_n \\varphi_{1}}{\\epsilon_1} = 0 $$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die tangentiale Komponente des elektrostatischen Potentials \\( \\varphi \\), wenn das Potential vor und nach dem Sprung mit \\(\\varphi_{1}\\) und \\(\\varphi_{2}\\) gegeben ist?",
+    "answers": [
+      "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{1} - \\nabla_t \\varphi_{2} $$",
+      "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{2} - \\nabla_t \\varphi_{1} = 0 $$",
+      "$$ [\\nabla_t \\varphi] = \\nabla \\times \\nabla_t \\varphi $$",
+      "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{2} + \\nabla_t \\varphi_{1} $$"
+    ],
+    "correct": "$$ [\\nabla_t \\varphi] = \\nabla_t \\varphi_{2} - \\nabla_t \\varphi_{1} = 0 $$"
+  },
+  {
+    "question": "Wie lautet die Sprungbedingung für die normale Komponente des elektrostatischen Potentials \\( \\varphi \\), wenn das Potential vor und nach dem Sprung mit \\(\\varphi_{1}\\) und \\(\\varphi_{2}\\) gegeben ist?",
+    "answers": [
+      "$$ [\\frac{\\nabla_n \\varphi}{\\epsilon}] = \\frac{\\nabla_n \\varphi_{1}}{\\epsilon_1} - \\frac{\\nabla_n \\varphi_{2}}{\\epsilon_2} $$",
+      "$$ [\\frac{\\nabla_n \\varphi}{\\epsilon}] = \\nabla \\cdot \\frac{\\nabla_n \\varphi}{\\epsilon} $$",
+      "$$ [\\frac{\\nabla_n \\varphi}{\\epsilon}] = \\frac{\\nabla_n \\varphi_{2}}{\\epsilon_2} - \\frac{\\nabla_n \\varphi_{1}}{\\epsilon_1} = \\sigma $$",
+      "$$ [\\frac{\\nabla_n \\varphi}{\\epsilon}] = \\frac{\\nabla_n \\varphi_{2}}{\\epsilon_2} + \\frac{\\nabla_n \\varphi_{1}}{\\epsilon_1} $$"
+    ],
+    "correct": "$$ [\\frac{\\nabla_n \\varphi}{\\epsilon}] = \\frac{\\nabla_n \\varphi_{2}}{\\epsilon_2} - \\frac{\\nabla_n \\varphi_{1}}{\\epsilon_1} = \\sigma $$"
+  }
+]

@@ -84,10 +84,10 @@ function save(key, value) {
 }
 
 // --- Math rendering ----------------------------------------------------
-// The question files hold LaTeX without $…$ delimiters, mixed with plain
+// Most question files hold LaTeX without $…$ delimiters, mixed with plain
 // sentences like "Is 7 prime?". Plain sentences are shown as text; everything
 // else goes through KaTeX, with words of 3+ letters (and short words like
-// "of", "is") set upright via \text{}.
+// "of", "is") set upright via \text{}. Delimited math is handled by renderMixed.
 const SHORT_WORDS = "of|is|if|in|to|by|on|at|an|as|or|be|it|no|so|we|ob|im|zu|da|wo|es|um";
 function isPlainText(s) {
   if (/[\\^_{}]/.test(s)) return false;
@@ -123,15 +123,41 @@ function splitChunks(tex) {
   return chunks.filter((c) => c.trim() !== "");
 }
 
+// Sentences with delimited math, e.g. "Was repräsentiert \( \vec{F} \)?",
+// keep their text as is and only render the \( \), \[ \], $ $ and $$ $$ parts.
+const DELIMITED = /\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\]|\\\(([\s\S]+?)\\\)|\$([^$\n]+?)\$/g;
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+}
+
+function renderMixed(src) {
+  let html = "";
+  let last = 0;
+  for (const m of src.matchAll(DELIMITED)) {
+    html += escapeHtml(src.slice(last, m.index));
+    html += window.katex.renderToString(m[1] ?? m[2] ?? m[3] ?? m[4], { throwOnError: false });
+    last = m.index + m[0].length;
+  }
+  return html + escapeHtml(src.slice(last));
+}
+
+function renderMath(tex) {
+  return splitChunks(tex)
+    .map((chunk) => window.katex.renderToString(wrapWords(chunk), { throwOnError: false }))
+    .join(" ");
+}
+
 function Tex({ src, className = "", style }) {
   const html = useMemo(() => {
-    if (isPlainText(src) || !window.katex) return null;
-    return splitChunks(src)
-      .map((chunk) => window.katex.renderToString(wrapWords(chunk), { throwOnError: false }))
-      .join(" ");
+    if (!window.katex) return null;
+    if (src.search(DELIMITED) !== -1) return renderMixed(src);
+    if (isPlainText(src)) return null;
+    return renderMath(src);
   }, [src]);
-  if (html === null) return <span className={className} style={style}>{src}</span>;
-  return <span className={className} style={style} dangerouslySetInnerHTML={{ __html: html }} />;
+  const cls = `${className} whitespace-pre-line`;
+  if (html === null) return <span className={cls} style={style}>{src}</span>;
+  return <span className={cls} style={style} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
 // --- Helpers -----------------------------------------------------------
@@ -451,7 +477,7 @@ function Quiz({ quiz, t, menuHash, onFinish }) {
               <span className="min-w-0 overflow-x-auto">
                 <Tex src={h.question} />
                 {!h.correct && (
-                  <span className="mq-mono ml-2" style={{ color: C.mutedOnMint }}>
+                  <span className="ml-2" style={{ color: C.mutedOnMint }}>
                     → <Tex src={h.correctAnswer} style={{ color: C.green }} />
                   </span>
                 )}
@@ -493,7 +519,7 @@ function Quiz({ quiz, t, menuHash, onFinish }) {
         className="mq-grid relative rounded-xl mb-5 flex items-center justify-center px-5 py-8 text-center overflow-x-auto"
         style={{ minHeight: "9.5rem", border: `1px solid ${C.line}` }}
       >
-        <Tex src={round.question} className="mq-question text-xl sm:text-2xl leading-relaxed" style={{ color: C.text }} />
+        <Tex src={round.question} className={`mq-question leading-relaxed ${round.question.length > 90 ? "text-lg sm:text-xl" : "text-xl sm:text-2xl"}`} style={{ color: C.text }} />
         {streak >= 3 && (
           <div className="absolute top-2 right-2 mq-mono text-[10px] px-2 py-1 rounded-full" style={{ background: C.text, color: C.mint }}>
             🔥 {streak}

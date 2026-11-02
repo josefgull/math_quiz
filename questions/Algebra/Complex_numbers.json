@@ -98,5 +98,105 @@
       "-1 only"
     ],
     "correct": "i and -i"
+  },
+  {
+    "question": "What is the sum of \\(3 + 4i\\) and \\(1 - 2i\\)?",
+    "answers": [
+      "4 + 2i",
+      "2 + 6i",
+      "4 + 6i",
+      "2 + 2i"
+    ],
+    "correct": "4 + 2i"
+  },
+  {
+    "question": "What is the product of \\((1 + i)\\) and \\((2 - i)\\)?",
+    "answers": [
+      "3 + i",
+      "2 + i",
+      "1 + 3i",
+      "3 - i"
+    ],
+    "correct": "3 + i"
+  },
+  {
+    "question": "What is the magnitude of \\(3 - 4i\\)?",
+    "answers": [
+      "5",
+      "7",
+      "2",
+      "1"
+    ],
+    "correct": "5"
+  },
+  {
+    "question": "Find the complex conjugate of \\(7 + 6i\\).",
+    "answers": [
+      "7 - 6i",
+      "7 + 6i",
+      "-7 + 6i",
+      "-7 - 6i"
+    ],
+    "correct": "7 - 6i"
+  },
+  {
+    "question": "What is \\(\\dfrac{4 + 3i}{1 - 2i}\\)?",
+    "answers": [
+      "-\\frac{2}{5} + \\frac{11}{5}i",
+      "2 + i",
+      "-2 + i",
+      "\\frac{2}{5} - \\frac{11}{5}i"
+    ],
+    "correct": "-\\frac{2}{5} + \\frac{11}{5}i"
+  },
+  {
+    "question": "What is the argument (angle) of \\(-1 + i\\)?",
+    "answers": [
+      "\\frac{3\\pi}{4}",
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{2}",
+      "\\pi"
+    ],
+    "correct": "\\frac{3\\pi}{4}"
+  },
+  {
+    "question": "Express \\(1 + \\sqrt{3}\\,i\\) in polar form.",
+    "answers": [
+      "2\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right)",
+      "2\\left(\\cos\\frac{\\pi}{6} + i\\sin\\frac{\\pi}{6}\\right)",
+      "2\\left(\\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}\\right)",
+      "2\\left(\\cos\\frac{\\pi}{2} + i\\sin\\frac{\\pi}{2}\\right)"
+    ],
+    "correct": "2\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right)"
+  },
+  {
+    "question": "What is the real part of \\(5 - 2i\\)?",
+    "answers": [
+      "5",
+      "-2",
+      "3",
+      "7"
+    ],
+    "correct": "5"
+  },
+  {
+    "question": "Solve \\(z^2 = -1\\) for complex \\(z\\).",
+    "answers": [
+      "\\pm i",
+      "\\pm 1",
+      "\\pm 2i",
+      "\\pm\\sqrt{2}"
+    ],
+    "correct": "\\pm i"
+  },
+  {
+    "question": "Which \\(z\\) satisfies \\(z + 2i = 3 - i\\)?",
+    "answers": [
+      "3 - 3i",
+      "1 - 3i",
+      "3 - i",
+      "1 + i"
+    ],
+    "correct": "3 - 3i"
   }
 ]

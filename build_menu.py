@@ -1,4 +1,4 @@
-"""
+r"""
 Builds questions.json (the menu tree + all questions) from the questions/ folder.
 
     questions/
@@ -10,7 +10,8 @@ Builds questions.json (the menu tree + all questions) from the questions/ folder
 Names: underscores become spaces, an optional "01_" style prefix sets the
 order and is hidden. Each .json file is a list of
     {"question": "...", "answers": ["...", ...], "correct": "..."}
-with LaTeX allowed in question and answers.
+with LaTeX allowed in question and answers: either the whole string is LaTeX
+("\frac{d}{dx}x^2"), or math sits inside \( \) or $ $ within a sentence.
 
 Run:  python3 build_menu.py        (exits non-zero if a question file is broken)
 """

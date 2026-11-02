@@ -1,0 +1,52 @@
+[
+  {
+    "question": "\\( \\nabla r \\)",
+    "answers": [
+      "\\( \\vec{r}/r \\)",
+      "\\( 0 \\)",
+      "\\( \\vec{0}  \\)",
+      "\\( 3 \\)"
+    ],
+    "correct": "\\( \\vec{r}/r \\)"
+  },
+  {
+    "question": "\\( \\nabla \\cdot \\vec{r} \\)",
+    "answers": [
+      "\\( \\vec{r}/r \\)",
+      "\\( 0 \\)",
+      "\\( \\vec{0}  \\)",
+      "\\( 3 \\)"
+    ],
+    "correct": "\\( 3 \\)"
+  },
+  {
+    "question": "\\( \\nabla \\left( 1/r \\right) \\)",
+    "answers": [
+      "\\( 0 \\)",
+      "\\( \\vec{0}  \\)",
+      "\\( -\\vec{r}/r^3 \\)",
+      "\\( 3 \\)"
+    ],
+    "correct": "\\( -\\vec{r}/r^3 \\)"
+  },
+  {
+    "question": "\\( \\nabla  1/|\\vec{r}-\\vec{r'}|  \\)",
+    "answers": [
+      "\\( -(\\vec{r}-\\vec{r'})/|\\vec{r}-\\vec{r'}|^3 \\)",
+      "\\( \\vec{0}  \\)",
+      "\\( -\\vec{r}/r^3 \\)",
+      "\\( 3 \\)"
+    ],
+    "correct": "\\( -(\\vec{r}-\\vec{r'})/|\\vec{r}-\\vec{r'}|^3 \\)"
+  },
+  {
+    "question": "\\( \\nabla  U(r)  \\)",
+    "answers": [
+      "\\( -(\\vec{r}-\\vec{r'})/|\\vec{r}-\\vec{r'}|^3 \\)",
+      "\\( \\frac{\\partial{U}}{\\partial{r}} \\vec{r}/r  \\)",
+      "\\( -\\vec{r}/r^3 \\)",
+      "\\( 3 \\)"
+    ],
+    "correct": "\\( \\frac{\\partial{U}}{\\partial{r}} \\vec{r}/r  \\)"
+  }
+]

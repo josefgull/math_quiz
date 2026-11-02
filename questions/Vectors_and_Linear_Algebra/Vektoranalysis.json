@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Was besagt der Satz von Gauß?",
+    "answers": [
+      "Das Wegintegral eines Vektorfeldes entlang eines Weges entspricht dem Kurvenintegral des Gradienten.",
+      "Der Gradient eines Skalarfeldes entspricht dem Potenzial des Feldes.",
+      "Das Wegintegral eines Vektorfeldes entlang einer geschlossenen Kurve entspricht dem Oberflächenintegral der Rotation des Feldes über die Fläche.",
+      "Der Fluss eines Vektorfeldes durch eine geschlossene Fläche entspricht dem Volumenintegral der Divergenz des Feldes innerhalb der Fläche."
+    ],
+    "correct": "Der Fluss eines Vektorfeldes durch eine geschlossene Fläche entspricht dem Volumenintegral der Divergenz des Feldes innerhalb der Fläche."
+  },
+  {
+    "question": "Was ist die mathematische Formulierung des Divergenzsatzes?",
+    "answers": [
+      "\\( \\oint_{C} \\vec{F} \\cdot d\\vec{r} = \\int_{S} (\\nabla \\times \\vec{F}) \\cdot d\\vec{A} \\)",
+      "\\( \\oint_{S} (\\nabla \\times \\vec{F}) \\cdot d\\vec{A} = 0 \\)",
+      "\\( \\oint_{S} \\vec{F} \\cdot d\\vec{A} = \\int_{V} (\\nabla \\cdot \\vec{F}) \\, dV \\)",
+      "\\( \\int_{V} \\nabla \\cdot \\vec{F} \\, dV = 0 \\)"
+    ],
+    "correct": "\\( \\oint_{S} \\vec{F} \\cdot d\\vec{A} = \\int_{V} (\\nabla \\cdot \\vec{F}) \\, dV \\)"
+  },
+  {
+    "question": "Was besagt der Satz von Stokes?",
+    "answers": [
+      "Der Gradient eines Skalarfeldes entspricht dem Potenzial des Feldes.",
+      "Der Fluss eines Vektorfeldes durch eine geschlossene Fläche entspricht dem Volumenintegral der Divergenz des Feldes innerhalb der Fläche.",
+      "Das Wegintegral eines Vektorfeldes entlang eines Weges entspricht dem Kurvenintegral des Gradienten.",
+      "Das Wegintegral eines Vektorfeldes entlang einer geschlossenen Kurve entspricht dem Oberflächenintegral der Rotation des Feldes über die Fläche."
+    ],
+    "correct": "Das Wegintegral eines Vektorfeldes entlang einer geschlossenen Kurve entspricht dem Oberflächenintegral der Rotation des Feldes über die Fläche."
+  },
+  {
+    "question": "Was ist die mathematische Formulierung des Satzes von Stokes?",
+    "answers": [
+      "\\( \\int_{V} \\nabla \\cdot \\vec{F} \\, dV = 0 \\)",
+      "\\( \\oint_{S} \\vec{F} \\cdot d\\vec{A} = \\int_{V} (\\nabla \\cdot \\vec{F}) \\, dV \\)",
+      "\\( \\oint_{C} (\\nabla \\cdot \\vec{F}) \\cdot d\\vec{r} = 0 \\)",
+      "\\( \\oint_{C} \\vec{F} \\cdot d\\vec{r} = \\int_{S} (\\nabla \\times \\vec{F}) \\cdot d\\vec{A} \\)"
+    ],
+    "correct": "\\( \\oint_{C} \\vec{F} \\cdot d\\vec{r} = \\int_{S} (\\nabla \\times \\vec{F}) \\cdot d\\vec{A} \\)"
+  },
+  {
+    "question": "Welcher Satz kann verwendet werden, um ein Oberflächenintegral in ein Volumenintegral zu verwandeln?",
+    "answers": [
+      "Satz von Stokes",
+      "Fundamentalsatz der Analysis",
+      "Divergenzsatz",
+      "Satz von Green"
+    ],
+    "correct": "Divergenzsatz"
+  },
+  {
+    "question": "Welcher Satz kann verwendet werden, um ein Wegintegral in ein Oberflächenintegral zu verwandeln?",
+    "answers": [
+      "Satz von Green",
+      "Satz von Stokes",
+      "Divergenzsatz",
+      "Fundamentalsatz der Analysis"
+    ],
+    "correct": "Satz von Stokes"
+  },
+  {
+    "question": "Im Kontext des Satzes von Stokes, was repräsentiert \\( \\vec{F} \\cdot d\\vec{r} \\)?",
+    "answers": [
+      "Den Fluss des Vektorfeldes \\( \\vec{F} \\) durch die Fläche \\( S \\)",
+      "Die Rotation des Vektorfeldes \\( \\vec{F} \\) über die Fläche \\( S \\)",
+      "Das Wegintegral des Vektorfeldes \\( \\vec{F} \\) entlang der Kurve \\( C \\)",
+      "Die Divergenz des Vektorfeldes \\( \\vec{F} \\) im Volumen \\( V \\)"
+    ],
+    "correct": "Das Wegintegral des Vektorfeldes \\( \\vec{F} \\) entlang der Kurve \\( C \\)"
+  },
+  {
+    "question": "Im Kontext des Divergenzsatzes, was repräsentiert \\( \\nabla \\cdot \\vec{F} \\)?",
+    "answers": [
+      "Das Wegintegral des Vektorfeldes \\( \\vec{F} \\)",
+      "Den Gradient des Vektorfeldes \\( \\vec{F} \\)",
+      "Die Divergenz des Vektorfeldes \\( \\vec{F} \\)",
+      "Die Rotation des Vektorfeldes \\( \\vec{F} \\)"
+    ],
+    "correct": "Die Divergenz des Vektorfeldes \\( \\vec{F} \\)"
+  },
+  {
+    "question": "Welches Integral wird im Divergenzsatz verwendet?",
+    "answers": [
+      "Kurvenintegral des Skalarfeldes",
+      "Volumenintegral der Divergenz",
+      "Wegintegral des Vektorfeldes",
+      "Oberflächenintegral der Rotation"
+    ],
+    "correct": "Volumenintegral der Divergenz"
+  },
+  {
+    "question": "Welches Integral wird im Satz von Stokes verwendet?",
+    "answers": [
+      "Wegintegral des Skalarfeldes",
+      "Kurvenintegral des Gradienten",
+      "Oberflächenintegral der Rotation",
+      "Volumenintegral der Divergenz"
+    ],
+    "correct": "Oberflächenintegral der Rotation"
+  }
+]
