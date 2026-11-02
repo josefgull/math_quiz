@@ -10,7 +10,7 @@
     "correct": "1"
   },
   {
-    "question": "\\sin(\\pi/2)=",
+    "question": "\\sin\\frac{\\pi}{2}=",
     "answers": [
       "1",
       "0",

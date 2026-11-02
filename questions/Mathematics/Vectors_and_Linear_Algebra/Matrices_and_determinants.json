@@ -20,7 +20,7 @@
     "correct": "\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}"
   },
   {
-    "question": "Inverse\\;of\\;2x2\\;matrix\\;exists\\;if",
+    "question": "Inverse\\;of\\;2\\times2\\;matrix\\;exists\\;if",
     "answers": [
       "determinant\\;\\neq\\;0",
       "determinant\\;=0",

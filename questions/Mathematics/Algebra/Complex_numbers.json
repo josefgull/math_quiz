@@ -62,12 +62,12 @@
   {
     "question": "\\frac{1 + 2i}{1 - i}",
     "answers": [
-      "-1/2 + 3/2 i",
+      "-\\frac{1}{2} + \\frac{3}{2}i",
       "1 + i",
-      "3/2 - 1/2 i",
+      "\\frac{3}{2} - \\frac{1}{2}i",
       "-1 + 2i"
     ],
-    "correct": "-1/2 + 3/2 i"
+    "correct": "-\\frac{1}{2} + \\frac{3}{2}i"
   },
   {
     "question": "\\arg(-1 + 0i)",
@@ -92,12 +92,12 @@
   {
     "question": "Solve\\; z^{2} = -1",
     "answers": [
-      "i and -i",
-      "1 and -1",
+      "\\pm i",
+      "\\pm 1",
       "i only",
-      "-1 only"
+      "-1\\;only"
     ],
-    "correct": "i and -i"
+    "correct": "\\pm i"
   },
   {
     "question": "What is the sum of \\(3 + 4i\\) and \\(1 - 2i\\)?",

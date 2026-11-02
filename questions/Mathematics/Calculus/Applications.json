@@ -30,11 +30,11 @@
     "correct": "\\int f(x)\\,dx"
   },
   {
-    "question": "Elastic\\;potential\\;energy\\;for\\;spring:\\;\\frac{1}{2}kx^{2}\\;\\;k=constant",
+    "question": "Elastic\\;potential\\;energy\\;of\\;a\\;spring\\;with\\;constant\\;k,\\;stretched\\;by\\;x",
     "answers": [
       "\\frac{1}{2}kx^{2}",
       "kx",
-      "k/x",
+      "\\frac{k}{x}",
       "\\frac{k}{2x^{2}}"
     ],
     "correct": "\\frac{1}{2}kx^{2}"

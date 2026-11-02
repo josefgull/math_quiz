@@ -649,7 +649,7 @@ export default function MathQuiz() {
         .mq-card { transition: border-color .15s, transform .1s; }
         .mq-card:hover { border-color: ${C.text} !important; }
         .mq-card:active { transform: scale(0.99); }
-        .katex { font-size: 1.1em; }
+        .katex { font-size: 1.1em; white-space: nowrap; }
         @keyframes mq-stamp {
           0% { transform: scale(2.2) rotate(-14deg); opacity: 0; }
           60% { transform: scale(0.92) rotate(-14deg); opacity: 1; }

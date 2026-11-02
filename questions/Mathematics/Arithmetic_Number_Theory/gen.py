@@ -29,7 +29,7 @@ def generate_fractions_and_ratios():
     for _ in range(8):
         numerator = random.randint(1, 9)
         denominator = random.randint(2, 10)
-        question = f"{numerator}/{denominator}"
+        question = rf"\frac{{{numerator}}}{{{denominator}}}"
         correct = fmt(numerator/denominator)
         answers = [correct,
                    fmt((numerator+1)/denominator),

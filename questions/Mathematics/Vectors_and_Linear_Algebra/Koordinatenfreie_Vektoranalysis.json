@@ -2,17 +2,17 @@
   {
     "question": "\\( \\nabla r \\)",
     "answers": [
-      "\\( \\vec{r}/r \\)",
+      "\\( \\frac{\\vec{r}}{r} \\)",
       "\\( 0 \\)",
       "\\( \\vec{0}  \\)",
       "\\( 3 \\)"
     ],
-    "correct": "\\( \\vec{r}/r \\)"
+    "correct": "\\( \\frac{\\vec{r}}{r} \\)"
   },
   {
     "question": "\\( \\nabla \\cdot \\vec{r} \\)",
     "answers": [
-      "\\( \\vec{r}/r \\)",
+      "\\( \\frac{\\vec{r}}{r} \\)",
       "\\( 0 \\)",
       "\\( \\vec{0}  \\)",
       "\\( 3 \\)"
@@ -20,33 +20,33 @@
     "correct": "\\( 3 \\)"
   },
   {
-    "question": "\\( \\nabla \\left( 1/r \\right) \\)",
+    "question": "\\( \\nabla \\frac{1}{r} \\)",
     "answers": [
       "\\( 0 \\)",
       "\\( \\vec{0}  \\)",
-      "\\( -\\vec{r}/r^3 \\)",
+      "\\( -\\frac{\\vec{r}}{r^3} \\)",
       "\\( 3 \\)"
     ],
-    "correct": "\\( -\\vec{r}/r^3 \\)"
+    "correct": "\\( -\\frac{\\vec{r}}{r^3} \\)"
   },
   {
-    "question": "\\( \\nabla  1/|\\vec{r}-\\vec{r'}|  \\)",
+    "question": "\\( \\nabla \\frac{1}{|\\vec{r}-\\vec{r'}|}  \\)",
     "answers": [
-      "\\( -(\\vec{r}-\\vec{r'})/|\\vec{r}-\\vec{r'}|^3 \\)",
+      "\\( -\\frac{\\vec{r}-\\vec{r'}}{|\\vec{r}-\\vec{r'}|^3} \\)",
       "\\( \\vec{0}  \\)",
-      "\\( -\\vec{r}/r^3 \\)",
+      "\\( -\\frac{\\vec{r}}{r^3} \\)",
       "\\( 3 \\)"
     ],
-    "correct": "\\( -(\\vec{r}-\\vec{r'})/|\\vec{r}-\\vec{r'}|^3 \\)"
+    "correct": "\\( -\\frac{\\vec{r}-\\vec{r'}}{|\\vec{r}-\\vec{r'}|^3} \\)"
   },
   {
     "question": "\\( \\nabla  U(r)  \\)",
     "answers": [
-      "\\( -(\\vec{r}-\\vec{r'})/|\\vec{r}-\\vec{r'}|^3 \\)",
-      "\\( \\frac{\\partial{U}}{\\partial{r}} \\vec{r}/r  \\)",
-      "\\( -\\vec{r}/r^3 \\)",
+      "\\( -\\frac{\\vec{r}-\\vec{r'}}{|\\vec{r}-\\vec{r'}|^3} \\)",
+      "\\( \\frac{\\partial U}{\\partial r} \\frac{\\vec{r}}{r}  \\)",
+      "\\( -\\frac{\\vec{r}}{r^3} \\)",
       "\\( 3 \\)"
     ],
-    "correct": "\\( \\frac{\\partial{U}}{\\partial{r}} \\vec{r}/r  \\)"
+    "correct": "\\( \\frac{\\partial U}{\\partial r} \\frac{\\vec{r}}{r}  \\)"
   }
 ]

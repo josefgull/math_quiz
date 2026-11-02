@@ -40,7 +40,7 @@
     "correct": "68\\%"
   },
   {
-    "question": "If\\;X\\sim Bin(n,p),\\;E[X]=",
+    "question": "If\\;X\\sim \\operatorname{Bin}(n,p),\\;E[X]=",
     "answers": [
       "np",
       "n+p",

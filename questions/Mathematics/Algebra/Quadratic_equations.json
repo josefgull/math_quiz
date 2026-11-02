@@ -2,12 +2,12 @@
   {
     "question": "Solve\\; x^{2}-5x+6=0",
     "answers": [
-      "x=2,3",
-      "x=-2, -3",
-      "x=1,6",
-      "x=0, -6"
+      "x_1=2,\\ x_2=3",
+      "x_1=-2,\\ x_2=-3",
+      "x_1=1,\\ x_2=6",
+      "x_1=0,\\ x_2=-6"
     ],
-    "correct": "x=2,3"
+    "correct": "x_1=2,\\ x_2=3"
   },
   {
     "question": "Quadratic\\;formula\\;gives\\;the\\;roots\\;of\\;ax^{2}+bx+c=0",
