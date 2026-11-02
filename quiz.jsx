@@ -51,16 +51,21 @@ const STRINGS = {
   },
 };
 
+// Colors from the original app (old lib/styles.dart AppColors)
 const C = {
-  page: "#14232b",
-  ink: "#1d3540",
-  mint: "#acdfc7",
-  teal: "#4f9a86",
-  paper: "#f6f4ec",
-  line: "#dde3df",
-  text: "#1f2a2e",
-  muted: "#5d6b6e",
-  red: "#b23a48",
+  page: "#55838f",
+  background: "#6c99a6", // AppColors.background
+  mint: "#acdfc7", // AppColors.appBar / buttonDefault
+  correct: "#95eb98", // AppColors.buttonCorrect
+  wrong: "#e4b2ae", // AppColors.buttonWrong
+  mintLight: "#d3efe2",
+  border: "#8cc4ad",
+  line: "#5d8b97",
+  text: "#0f1f24",
+  muted: "#14292f",
+  mutedOnMint: "#3a5a5c",
+  red: "#7a1f2b",
+  green: "#1d5a24",
 };
 
 // --- Storage (per browser; never required) ------------------------------
@@ -221,13 +226,13 @@ function AdSlot() {
 // --- UI pieces ---------------------------------------------------------
 function LanguageSelector({ lang, setLang }) {
   return (
-    <div className="flex mq-mono text-[10px] tracking-wide rounded-full overflow-hidden" style={{ border: `1px solid ${C.mint}` }}>
+    <div className="flex mq-mono text-[10px] tracking-wide rounded-full overflow-hidden" style={{ border: `1px solid ${C.text}` }}>
       {["en", "de"].map((code) => (
         <button
           key={code}
           onClick={() => setLang(code)}
           className="px-2.5 py-1 transition-colors"
-          style={{ background: lang === code ? C.mint : "transparent", color: lang === code ? C.ink : C.mint }}
+          style={{ background: lang === code ? C.text : "transparent", color: lang === code ? C.mint : C.text }}
         >
           {code.toUpperCase()}
         </button>
@@ -243,9 +248,9 @@ function PillButton({ onClick, children, variant = "solid" }) {
       onClick={onClick}
       className="mq-mono text-sm tracking-wide px-6 py-3 rounded-full transition-transform active:scale-95"
       style={{
-        background: solid ? C.ink : "transparent",
-        color: solid ? C.paper : C.ink,
-        border: `1.5px solid ${C.ink}`,
+        background: solid ? C.mint : "transparent",
+        color: C.text,
+        border: `1.5px solid ${solid ? C.mint : C.text}`,
       }}
     >
       {children}
@@ -262,7 +267,7 @@ function Menu({ trail, t, best }) {
     <div>
       <div className="flex items-center gap-2 mb-4 mq-mono text-[11px] flex-wrap" style={{ color: C.muted }}>
         {parentHash && (
-          <a href={parentHash} className="px-2 py-0.5 rounded-full mr-1" style={{ border: `1px solid ${C.line}`, color: C.ink }}>
+          <a href={parentHash} className="px-2 py-0.5 rounded-full mr-1" style={{ border: `1px solid ${C.text}`, color: C.text }}>
             ← {t.back}
           </a>
         )}
@@ -274,7 +279,7 @@ function Menu({ trail, t, best }) {
                 {i === 0 ? t.root : f.name}
               </a>
             ) : (
-              <span style={{ color: C.ink }}>{i === 0 ? t.root : f.name}</span>
+              <span style={{ color: C.text, fontWeight: 600 }}>{i === 0 ? t.root : f.name}</span>
             )}
           </span>
         ))}
@@ -288,13 +293,13 @@ function Menu({ trail, t, best }) {
               key={f.id}
               href={hashFor([...trail, f])}
               className="mq-card flex items-center justify-between px-4 py-3 rounded-lg"
-              style={{ background: "#fff", border: `1.5px solid ${C.line}`, color: C.text }}
+              style={{ background: C.mint, border: `1.5px solid ${C.border}`, color: C.text }}
             >
               <span className="flex items-center gap-3">
-                <span className="mq-mono text-base" style={{ color: C.teal }}>▸</span>
+                <span className="mq-mono text-base" style={{ color: C.text }}>▸</span>
                 <span className="mq-body text-sm font-medium">{f.name}</span>
               </span>
-              <span className="mq-mono text-[10px] text-right" style={{ color: C.muted }}>
+              <span className="mq-mono text-[10px] text-right" style={{ color: C.mutedOnMint }}>
                 {t.quizzes(quizzes)} · {t.questions(questions)}
               </span>
             </a>
@@ -308,13 +313,13 @@ function Menu({ trail, t, best }) {
               key={q.id}
               href={href}
               className="mq-card flex items-center justify-between px-4 py-3 rounded-lg"
-              style={{ background: "#fff", border: `1.5px solid ${C.line}`, color: C.text }}
+              style={{ background: C.mint, border: `1.5px solid ${C.border}`, color: C.text }}
             >
               <span className="flex items-center gap-3">
                 <span className="mq-mono text-base" style={{ color: C.red }}>∑</span>
                 <span className="mq-body text-sm font-medium">{q.name}</span>
               </span>
-              <span className="mq-mono text-[10px] text-right" style={{ color: b && b.score === b.total ? C.teal : C.muted }}>
+              <span className="mq-mono text-[10px] text-right" style={{ color: b && b.score === b.total ? C.green : C.mutedOnMint, fontWeight: b && b.score === b.total ? 600 : 400 }}>
                 {b ? t.best(b.score, b.total) : t.questions(q.questions.length)}
               </span>
             </a>
@@ -426,28 +431,28 @@ function Quiz({ quiz, t, menuHash, onFinish }) {
             </span>
           </div>
         </div>
-        <h2 className="mq-display text-2xl mb-1" style={{ color: C.ink }}>
+        <h2 className="mq-display text-2xl mb-1" style={{ color: C.text }}>
           {grade.label}
         </h2>
         <p className="mq-body text-sm mb-5" style={{ color: C.muted }}>
           {grade.detail} {t.bestStreak(bestStreak)}
         </p>
 
-        <div className="text-left mb-6 max-h-56 overflow-y-auto rounded-lg" style={{ border: `1px solid ${C.line}`, background: "#fff" }}>
+        <div className="text-left mb-6 max-h-56 overflow-y-auto rounded-lg" style={{ border: `1px solid ${C.border}`, background: C.mintLight }}>
           {history.map((h, i) => (
             <div
               key={i}
               className="text-xs px-3 py-2 flex items-center justify-between gap-3"
               style={{
-                borderBottom: i < history.length - 1 ? `1px solid ${C.line}` : "none",
-                color: h.correct ? "#2f6b2f" : "#a3333f",
+                borderBottom: i < history.length - 1 ? `1px solid ${C.mint}` : "none",
+                color: h.correct ? C.green : C.red,
               }}
             >
               <span className="min-w-0 overflow-x-auto">
                 <Tex src={h.question} />
                 {!h.correct && (
-                  <span className="mq-mono ml-2" style={{ color: C.muted }}>
-                    → <Tex src={h.correctAnswer} style={{ color: "#2f6b2f" }} />
+                  <span className="mq-mono ml-2" style={{ color: C.mutedOnMint }}>
+                    → <Tex src={h.correctAnswer} style={{ color: C.green }} />
                   </span>
                 )}
               </span>
@@ -480,7 +485,7 @@ function Quiz({ quiz, t, menuHash, onFinish }) {
         </span>
       </div>
       <div className="h-1.5 rounded-full mb-5" style={{ background: C.line }}>
-        <div className="h-1.5 rounded-full transition-all duration-300" style={{ width: `${progressPct}%`, background: C.teal }} />
+        <div className="h-1.5 rounded-full transition-all duration-300" style={{ width: `${progressPct}%`, background: C.mint }} />
       </div>
 
       {/* question card on graph paper */}
@@ -490,7 +495,7 @@ function Quiz({ quiz, t, menuHash, onFinish }) {
       >
         <Tex src={round.question} className="mq-question text-xl sm:text-2xl leading-relaxed" style={{ color: C.text }} />
         {streak >= 3 && (
-          <div className="absolute top-2 right-2 mq-mono text-[10px] px-2 py-1 rounded-full" style={{ background: C.ink, color: C.mint }}>
+          <div className="absolute top-2 right-2 mq-mono text-[10px] px-2 py-1 rounded-full" style={{ background: C.text, color: C.mint }}>
             🔥 {streak}
           </div>
         )}
@@ -500,18 +505,15 @@ function Quiz({ quiz, t, menuHash, onFinish }) {
         {round.options.map((opt, i) => {
           const isSelected = selected === opt;
           const isCorrect = selected !== null && opt === round.correct;
-          let bg = "#ffffff";
-          let border = "#d5ddd9";
-          let color = C.text;
+          let bg = C.mint;
+          let border = C.border;
           if (selected !== null) {
             if (isCorrect) {
-              bg = "#dcead9";
-              border = "#5c8a5c";
-              color = "#2f4a2f";
+              bg = C.correct;
+              border = C.green;
             } else if (isSelected) {
-              bg = "#f0dcdc";
+              bg = C.wrong;
               border = C.red;
-              color = "#7a2530";
             }
           }
           return (
@@ -520,9 +522,9 @@ function Quiz({ quiz, t, menuHash, onFinish }) {
               onClick={() => answer(opt)}
               disabled={selected !== null}
               className="mq-body text-base text-left px-4 py-3 rounded-lg transition-colors flex items-center gap-3 overflow-x-auto"
-              style={{ background: bg, border: `1.5px solid ${border}`, color }}
+              style={{ background: bg, border: `1.5px solid ${border}`, color: C.text }}
             >
-              <span className="mq-mono text-[10px] shrink-0 hidden sm:inline" style={{ color: C.muted }}>
+              <span className="mq-mono text-[10px] shrink-0 hidden sm:inline" style={{ color: C.mutedOnMint }}>
                 {i + 1}
               </span>
               <Tex src={opt} />
@@ -584,15 +586,15 @@ export default function MathQuiz() {
         .mq-body { font-family: 'Inter', sans-serif; }
         .mq-question:not(:has(.katex)) { font-family: 'Fraunces', serif; }
         .mq-grid {
-          background-color: #fbfaf5;
+          background-color: ${C.mintLight};
           background-image:
-            linear-gradient(${C.line} 1px, transparent 1px),
-            linear-gradient(90deg, ${C.line} 1px, transparent 1px);
+            linear-gradient(${C.mint} 1px, transparent 1px),
+            linear-gradient(90deg, ${C.mint} 1px, transparent 1px);
           background-size: 18px 18px;
           background-position: center center;
         }
         .mq-card { transition: border-color .15s, transform .1s; }
-        .mq-card:hover { border-color: ${C.teal} !important; }
+        .mq-card:hover { border-color: ${C.text} !important; }
         .mq-card:active { transform: scale(0.99); }
         .katex { font-size: 1.1em; }
         @keyframes mq-stamp {
@@ -606,12 +608,12 @@ export default function MathQuiz() {
         }
       `}</style>
 
-      <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-2xl" style={{ background: C.paper, border: `1px solid ${C.mint}` }}>
-        <div className="px-5 py-4 flex items-center justify-between" style={{ background: C.ink, borderBottom: `2px solid ${C.mint}` }}>
-          <a href="#/" className="mq-mono text-[10px] tracking-[0.2em]" style={{ color: C.mint }}>
+      <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-2xl" style={{ background: C.background, border: `1px solid ${C.mint}` }}>
+        <div className="px-5 py-4 flex items-center justify-between" style={{ background: C.mint, borderBottom: `1px solid ${C.border}` }}>
+          <a href="#/" className="mq-mono text-[10px] tracking-[0.2em]" style={{ color: C.text }}>
             N° 3.14159
           </a>
-          <h1 className="mq-display text-lg sm:text-xl" style={{ color: C.paper }}>
+          <h1 className="mq-display text-lg sm:text-xl" style={{ color: C.text }}>
             {t.title}
           </h1>
           <LanguageSelector lang={lang} setLang={setLang} />
@@ -634,7 +636,7 @@ export default function MathQuiz() {
           )}
         </div>
 
-        <div className="px-5 py-2.5 mq-mono text-[10px] text-center" style={{ background: C.ink, color: "#7f979c" }}>
+        <div className="px-5 py-2.5 mq-mono text-[10px] text-center" style={{ background: C.mint, color: C.mutedOnMint }}>
           <a href={REPO_URL} target="_blank" rel="noopener">
             {t.footer}
           </a>
