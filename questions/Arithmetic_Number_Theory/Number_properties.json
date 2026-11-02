@@ -1,0 +1,66 @@
+[
+  {
+    "question": "Is 3 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "Yes"
+  },
+  {
+    "question": "Is 4 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "No"
+  },
+  {
+    "question": "Is 2 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "Yes"
+  },
+  {
+    "question": "Is 3 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "Yes"
+  },
+  {
+    "question": "Is 11 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "Yes"
+  },
+  {
+    "question": "Is 9 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "No"
+  },
+  {
+    "question": "Is 15 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "No"
+  },
+  {
+    "question": "Is 17 prime?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": "Yes"
+  }
+]

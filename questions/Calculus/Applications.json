@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Maximum\\;or\\;minimum\\;values\\;are\\;found\\;by\\;setting\\;",
+    "answers": [
+      "f'(x)=0",
+      "f(x)=0",
+      "\\int f(x)=0",
+      "No\\;rule"
+    ],
+    "correct": "f'(x)=0"
+  },
+  {
+    "question": "If\\;velocity\\;v(t)=\\frac{dx}{dt},\\;then\\;displacement\\;is",
+    "answers": [
+      "\\int v(t)\\,dt",
+      "\\frac{dv}{dt}",
+      "v(t)\\cdot t",
+      "v(t)"
+    ],
+    "correct": "\\int v(t)\\,dt"
+  },
+  {
+    "question": "Area\\;under\\;curve\\;y=f(x)",
+    "answers": [
+      "\\int f(x)\\,dx",
+      "\\frac{d}{dx}f(x)",
+      "f(x)",
+      "\\sum f(x)"
+    ],
+    "correct": "\\int f(x)\\,dx"
+  },
+  {
+    "question": "Elastic\\;potential\\;energy\\;for\\;spring:\\;\\frac{1}{2}kx^{2}\\;\\;k=constant",
+    "answers": [
+      "\\frac{1}{2}kx^{2}",
+      "kx",
+      "k/x",
+      "\\frac{k}{2x^{2}}"
+    ],
+    "correct": "\\frac{1}{2}kx^{2}"
+  },
+  {
+    "question": "Related\\;rates\\;generally\\;use",
+    "answers": [
+      "Implicit\\;differentiation",
+      "Partial\\;fractions",
+      "Integration\\;by\\;parts",
+      "Substitution"
+    ],
+    "correct": "Implicit\\;differentiation"
+  }
+]

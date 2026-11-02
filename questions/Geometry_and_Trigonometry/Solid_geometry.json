@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Volume\\;of\\;a\\;cube\\;with\\;side\\;a",
+    "answers": [
+      "a^{3}",
+      "6a^{2}",
+      "a^{2}",
+      "\\frac{1}{3}a^{3}"
+    ],
+    "correct": "a^{3}"
+  },
+  {
+    "question": "Volume\\;of\\;sphere\\;radius\\;r",
+    "answers": [
+      "\\frac{4}{3}\\pi r^{3}",
+      "4\\pi r^{2}",
+      "\\pi r^{2}",
+      "\\frac{1}{3}\\pi r^{3}"
+    ],
+    "correct": "\\frac{4}{3}\\pi r^{3}"
+  },
+  {
+    "question": "Surface\\;area\\;of\\;cube\\;side\\;a",
+    "answers": [
+      "6a^{2}",
+      "a^{3}",
+      "4a^{2}",
+      "2a^{2}"
+    ],
+    "correct": "6a^{2}"
+  },
+  {
+    "question": "Volume\\;of\\;right\\;circular\\;cone\\;with\\;radius\\;r\\;height\\;h",
+    "answers": [
+      "\\frac{1}{3}\\pi r^{2}h",
+      "\\pi r^{2}h",
+      "\\frac{1}{2}\\pi r^{2}h",
+      "\\pi r h"
+    ],
+    "correct": "\\frac{1}{3}\\pi r^{2}h"
+  },
+  {
+    "question": "Volume\\;of\\;cylinder\\;radius\\;r\\;height\\;h",
+    "answers": [
+      "\\pi r^{2}h",
+      "2\\pi r h",
+      "\\frac{4}{3}\\pi r^{3}",
+      "\\pi r h"
+    ],
+    "correct": "\\pi r^{2}h"
+  },
+  {
+    "question": "Cross\\;section\\;area\\;of\\;sphere\\;is\\;function\\;of\\;",
+    "answers": [
+      "radius\\;and\\;distance",
+      "only\\;radius",
+      "only\\;height",
+      "none"
+    ],
+    "correct": "radius\\;and\\;distance"
+  }
+]

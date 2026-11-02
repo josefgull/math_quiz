@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Determinant\\;of\\;\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}",
+    "answers": [
+      "1",
+      "0",
+      "-1",
+      "2"
+    ],
+    "correct": "1"
+  },
+  {
+    "question": "Matrix\\;identity\\;I_{2}",
+    "answers": [
+      "\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}",
+      "\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}",
+      "\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}",
+      "\\begin{pmatrix}2&0\\\\0&2\\end{pmatrix}"
+    ],
+    "correct": "\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}"
+  },
+  {
+    "question": "Inverse\\;of\\;2x2\\;matrix\\;exists\\;if",
+    "answers": [
+      "determinant\\;\\neq\\;0",
+      "determinant\\;=0",
+      "matrix\\;is\\;zero",
+      "matrix\\;is\\;identity"
+    ],
+    "correct": "determinant\\;\\neq\\;0"
+  },
+  {
+    "question": "Multiplication\\;of\\;matrices\\;is",
+    "answers": [
+      "Not\\;commutative",
+      "Always\\;commutative",
+      "Undefined",
+      "Elementwise"
+    ],
+    "correct": "Not\\;commutative"
+  },
+  {
+    "question": "Determinant\\;of\\;\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}",
+    "answers": [
+      "ad-bc",
+      "ab-cd",
+      "ac-bd",
+      "a+d-b-c"
+    ],
+    "correct": "ad-bc"
+  }
+]

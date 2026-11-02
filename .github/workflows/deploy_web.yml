@@ -1,35 +1,34 @@
-name: Deploy Flutter Web
+name: Deploy Web Quiz
 
 on:
   push:
     branches:
       - main
+  pull_request:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.38.5'
+      # Builds the menu from the questions/ folder; fails if a question file is broken
+      - name: Build menu
+        run: python3 build_menu.py
 
-      - name: Install dependencies
-        run: flutter pub get
-
-      - name: Build Web
-        run: flutter clean && flutter build web --release --base-href /math_quiz/
+      - name: Collect site files
+        run: |
+          mkdir site
+          cp index.html quiz.jsx questions.json site/
+          cp -r assets site/
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/web
+          publish_dir: site

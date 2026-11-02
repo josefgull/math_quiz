@@ -1,0 +1,62 @@
+[
+  {
+    "question": "\\sin^{2}x+\\cos^{2}x=",
+    "answers": [
+      "1",
+      "0",
+      "\\sin x",
+      "\\cos x"
+    ],
+    "correct": "1"
+  },
+  {
+    "question": "\\sin(\\pi/2)=",
+    "answers": [
+      "1",
+      "0",
+      "\\frac{1}{2}",
+      "-1"
+    ],
+    "correct": "1"
+  },
+  {
+    "question": "\\tan x=\\frac{\\sin x}{\\cos x}",
+    "answers": [
+      "True",
+      "False",
+      "Only\\;when\\;\\cos x=0",
+      "Only\\;when\\;\\sin x=0"
+    ],
+    "correct": "True"
+  },
+  {
+    "question": "\\sin(2x)=",
+    "answers": [
+      "2\\sin x\\cos x",
+      "\\sin^{2}x+\\cos^{2}x",
+      "\\sin x + \\cos x",
+      "\\tan x"
+    ],
+    "correct": "2\\sin x\\cos x"
+  },
+  {
+    "question": "Value\\;of\\;\\cos0",
+    "answers": [
+      "1",
+      "0",
+      "-1",
+      "\\frac{1}{2}"
+    ],
+    "correct": "1"
+  },
+  {
+    "question": "Inverse\\;sine\\;function\\;is\\;written\\;as",
+    "answers": [
+      "\\sin^{-1}x",
+      "\\sin x",
+      "\\arccos x",
+      "\\tan^{-1}x"
+    ],
+    "correct": "\\sin^{-1}x"
+  }
+]

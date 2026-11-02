@@ -1,0 +1,62 @@
+[
+  {
+    "question": "\\int x\\,dx",
+    "answers": [
+      "\\frac{x^{2}}{2}+C",
+      "x+C",
+      "\\ln x + C",
+      "\\frac{1}{x}+C"
+    ],
+    "correct": "\\frac{x^{2}}{2}+C"
+  },
+  {
+    "question": "\\int 0\\,dx",
+    "answers": [
+      "C",
+      "0",
+      "1",
+      "x+C"
+    ],
+    "correct": "C"
+  },
+  {
+    "question": "\\int \\cos x\\,dx",
+    "answers": [
+      "\\sin x + C",
+      "-\\sin x + C",
+      "\\cos x + C",
+      "-\\cos x + C"
+    ],
+    "correct": "\\sin x + C"
+  },
+  {
+    "question": "\\int x^{n}\\,dx\\; (n\\neq -1)",
+    "answers": [
+      "\\frac{x^{n+1}}{n+1}+C",
+      "\\ln x + C",
+      "\\frac{x^{n}}{n}+C",
+      "x^{n+1}+C"
+    ],
+    "correct": "\\frac{x^{n+1}}{n+1}+C"
+  },
+  {
+    "question": "\\int \\frac{1}{x}\\,dx",
+    "answers": [
+      "\\ln|x|+C",
+      "\\frac{1}{x}+C",
+      "x+ C",
+      "\\sqrt{x}+C"
+    ],
+    "correct": "\\ln|x|+C"
+  },
+  {
+    "question": "Integration\\;by\\;parts\\;formula",
+    "answers": [
+      "\\int u\\,dv = uv - \\int v\\,du",
+      "\\int u\\,dv = u+v",
+      "\\int u\\,dv = uv + \\int v\\,du",
+      "No\\;formula"
+    ],
+    "correct": "\\int u\\,dv = uv - \\int v\\,du"
+  }
+]

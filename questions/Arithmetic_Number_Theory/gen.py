@@ -1,4 +1,6 @@
+import json
 import random
+from pathlib import Path
 
 # -------------------------------
 # Generator functions per topic
@@ -28,11 +30,11 @@ def generate_fractions_and_ratios():
         numerator = random.randint(1, 9)
         denominator = random.randint(2, 10)
         question = f"{numerator}/{denominator}"
-        correct = str(round(numerator/denominator, 2))
+        correct = fmt(numerator/denominator)
         answers = [correct,
-                   str(round((numerator+1)/denominator,2)),
-                   str(round(numerator/(denominator+1),2)),
-                   str(round((numerator-1)/denominator,2))]
+                   fmt((numerator+1)/denominator),
+                   fmt(numerator/(denominator+1)),
+                   fmt((numerator-1)/denominator)]
         random.shuffle(answers)
         qlist.append({'question': rf'{question}', 'answers': answers, 'correct': correct})
     return qlist
@@ -56,7 +58,7 @@ def generate_squares_and_roots():
             question = f"{n}^2"
             correct = str(n * n)
         else:
-            question = f"√{n*n}"
+            question = rf"\sqrt{{{n*n}}}"
             correct = str(n)
         wrongs = set()
         while len(wrongs) < 3:
@@ -80,29 +82,26 @@ def is_prime(n):
             return False
     return True
 
-def dart_var_name(topic_name):
-    """Convert topic name to Dart variable name"""
-    return topic_name.replace("_questions","") + "Questions"
-
-def print_dart_list(var_name, questions):
-    print(f"final List<Map<String, dynamic>> {var_name} = [")
-    for q in questions:
-        print(f"  {{'question': r'{q['question']}', 'answers': {q['answers']}, 'correct': '{q['correct']}'}}," )
-    print("];\n")
+def fmt(x):
+    """Round to 2 decimals and drop trailing zeros (3.0 -> 3)"""
+    return f"{round(x, 2):g}"
 
 # -------------------------------
 # Main execution
 # -------------------------------
 
 TOPICS = {
-    "Basic_operations_questions": generate_basic_operations,
-    "Fractions_and_ratios_questions": generate_fractions_and_ratios,
-    "Number_properties_questions": generate_number_properties,
-    "Squares_and_roots_questions": generate_squares_and_roots
+    "Basic_operations": generate_basic_operations,
+    "Fractions_and_ratios": generate_fractions_and_ratios,
+    "Number_properties": generate_number_properties,
+    "Squares_and_roots": generate_squares_and_roots
 }
 
 if __name__ == "__main__":
+    # Writes one <topic>.json next to this script
+    here = Path(__file__).parent
     for topic_name, generator in TOPICS.items():
         questions = generator()
-        var_name = dart_var_name(topic_name)
-        print_dart_list(var_name, questions)
+        out = here / f"{topic_name}.json"
+        out.write_text(json.dumps(questions, indent=2, ensure_ascii=False) + "\n")
+        print(f"wrote {out} ({len(questions)} questions)")

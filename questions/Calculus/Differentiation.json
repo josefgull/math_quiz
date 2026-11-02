@@ -1,0 +1,62 @@
+[
+  {
+    "question": "\\frac{d}{dx}x^{2}",
+    "answers": [
+      "2x",
+      "x",
+      "x^{2}",
+      "1"
+    ],
+    "correct": "2x"
+  },
+  {
+    "question": "\\frac{d}{dx}\\sin x",
+    "answers": [
+      "\\cos x",
+      "-\\cos x",
+      "\\sin x",
+      "-\\sin x"
+    ],
+    "correct": "\\cos x"
+  },
+  {
+    "question": "Product\\;rule\\;for\\;\\frac{d}{dx}(uv)",
+    "answers": [
+      "u'v + uv'",
+      "u'v",
+      "u+v",
+      "uv"
+    ],
+    "correct": "u'v + uv'"
+  },
+  {
+    "question": "\\frac{d}{dx}e^{x}",
+    "answers": [
+      "e^{x}",
+      "x e^{x}",
+      "1",
+      "0"
+    ],
+    "correct": "e^{x}"
+  },
+  {
+    "question": "If\\;f(x)=x^{3},\\;f'(x)=",
+    "answers": [
+      "3x^{2}",
+      "x^{3}",
+      "x^{2}",
+      "3x"
+    ],
+    "correct": "3x^{2}"
+  },
+  {
+    "question": "Chain\\;rule:\\;\\frac{d}{dx}f(g(x))=",
+    "answers": [
+      "f'(g(x))g'(x)",
+      "f(g(x))",
+      "g(f(x))",
+      "f'(x)g'(x)"
+    ],
+    "correct": "f'(g(x))g'(x)"
+  }
+]

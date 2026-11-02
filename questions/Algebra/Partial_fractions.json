@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Decompose\\;\\frac{1}{(x-1)(x+2)}",
+    "answers": [
+      "\\frac{1/3}{x-1}+\\frac{1/3}{x+2}",
+      "\\frac{1/3}{x-1}-\\frac{1/3}{x+2}",
+      "\\frac{1}{x-1}+\\frac{1}{x+2}",
+      "\\frac{1/2}{x-1}+\\frac{1/2}{x+2}"
+    ],
+    "correct": "\\frac{1/3}{x-1}-\\frac{1/3}{x+2}"
+  },
+  {
+    "question": "Partial\\;fractions\\;are\\;used\\;to\\;integrate",
+    "answers": [
+      "Rational\\;functions",
+      "Trigonometric\\;functions",
+      "Exponential\\;functions",
+      "Logarithmic\\;functions"
+    ],
+    "correct": "Rational\\;functions"
+  },
+  {
+    "question": "Decompose\\;\\frac{2x+3}{(x+1)(x+2)}",
+    "answers": [
+      "\\frac{1}{x+1}+\\frac{1}{x+2}",
+      "\\frac{3}{x+1}+\\frac{-1}{x+2}",
+      "\\frac{1}{2(x+1)}+\\frac{3}{2(x+2)}",
+      "\\frac{2}{x+1}+\\frac{3}{x+2}"
+    ],
+    "correct": "\\frac{1}{x+1}+\\frac{1}{x+2}"
+  },
+  {
+    "question": "For\\;\\frac{Ax+B}{(x^{2}+1)}\\;the\\;partial\\;form\\;is",
+    "answers": [
+      "\\frac{Ax+B}{x^{2}+1}",
+      "\\frac{Ax+B}{x+1}",
+      "\\frac{A}{x}+\\frac{B}{x^{2}}",
+      "Not\\;possible"
+    ],
+    "correct": "\\frac{Ax+B}{x^{2}+1}"
+  },
+  {
+    "question": "If\\;denominator\\;has\\;repeated\\;linear\\;factor\\;(x-1)^{2},\\;include",
+    "answers": [
+      "\\frac{A}{x-1}+\\frac{B}{(x-1)^{2}}",
+      "\\frac{A}{x-1}",
+      "\\frac{A}{(x-1)^{2}}",
+      "No\\;decomposition"
+    ],
+    "correct": "\\frac{A}{x-1}+\\frac{B}{(x-1)^{2}}"
+  }
+]

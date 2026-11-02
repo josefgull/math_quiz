@@ -1,0 +1,62 @@
+[
+  {
+    "question": "\\sqrt{16}",
+    "answers": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": "4"
+  },
+  {
+    "question": "\\sqrt{49}",
+    "answers": [
+      "7",
+      "14",
+      "9",
+      "21"
+    ],
+    "correct": "7"
+  },
+  {
+    "question": "\\sqrt{81}",
+    "answers": [
+      "8",
+      "9",
+      "10",
+      "18"
+    ],
+    "correct": "9"
+  },
+  {
+    "question": "\\sqrt{25}",
+    "answers": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correct": "5"
+  },
+  {
+    "question": "\\sqrt{100}",
+    "answers": [
+      "10",
+      "20",
+      "25",
+      "50"
+    ],
+    "correct": "10"
+  },
+  {
+    "question": "\\sqrt{36}",
+    "answers": [
+      "6",
+      "12",
+      "18",
+      "24"
+    ],
+    "correct": "6"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Slope\\;of\\;line\\;through\\;(0,0)\\;and\\;(2,3)",
+    "answers": [
+      "\\frac{3}{2}",
+      "\\frac{2}{3}",
+      "3",
+      "2"
+    ],
+    "correct": "\\frac{3}{2}"
+  },
+  {
+    "question": "Equation\\;of\\;line\\;with\\;slope\\;m\\;and\\;intercept\\;c",
+    "answers": [
+      "y=mx+c",
+      "x=mx+c",
+      "y=mx+1",
+      "y=\\frac{m}{x}+c"
+    ],
+    "correct": "y=mx+c"
+  },
+  {
+    "question": "Distance\\;between\\;(0,0)\\;and\\;(3,4)",
+    "answers": [
+      "5",
+      "7",
+      "6",
+      "\\sqrt{13}"
+    ],
+    "correct": "5"
+  },
+  {
+    "question": "Midpoint\\;of\\;(1,2)\\;and\\;(3,4)",
+    "answers": [
+      "(2,3)",
+      "(1,1)",
+      "(3,3)",
+      "(4,6)"
+    ],
+    "correct": "(2,3)"
+  },
+  {
+    "question": "Perpendicular\\;slope\\;to\\;m",
+    "answers": [
+      "-\\frac{1}{m}",
+      "\\frac{1}{m}",
+      "-m",
+      "m"
+    ],
+    "correct": "-\\frac{1}{m}"
+  },
+  {
+    "question": "General\\;circle\\;equation\\;center\\;(h,k)",
+    "answers": [
+      "(x-h)^{2}+(y-k)^{2}=r^{2}",
+      "x^{2}+y^{2}=r",
+      "(x+h)^{2}+(y+k)^{2}=r^{2}",
+      "x^{2}-y^{2}=r^{2}"
+    ],
+    "correct": "(x-h)^{2}+(y-k)^{2}=r^{2}"
+  }
+]

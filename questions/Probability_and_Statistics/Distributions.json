@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Normal\\;distribution\\;is\\;characterized\\;by",
+    "answers": [
+      "Mean\\;and\\;variance",
+      "Only\\;mean",
+      "Only\\;variance",
+      "Median\\;only"
+    ],
+    "correct": "Mean\\;and\\;variance"
+  },
+  {
+    "question": "Binomial\\;distribution\\;parameters",
+    "answers": [
+      "n\\;and\\;p",
+      "Mean\\;and\\;variance",
+      "n\\;only",
+      "p\\;only"
+    ],
+    "correct": "n\\;and\\;p"
+  },
+  {
+    "question": "Poisson\\;distribution\\;models",
+    "answers": [
+      "Counts\\;of\\;rare\\;events",
+      "Continuous\\;measurements",
+      "Proportions",
+      "Rates\\;per\\;hour\\;only"
+    ],
+    "correct": "Counts\\;of\\;rare\\;events"
+  },
+  {
+    "question": "For\\;normal\\;distribution\\;about\\;what\\;percent\\;lies\\;within\\;1\\;SD",
+    "answers": [
+      "68\\%",
+      "50\\%",
+      "95\\%",
+      "99\\%"
+    ],
+    "correct": "68\\%"
+  },
+  {
+    "question": "If\\;X\\sim Bin(n,p),\\;E[X]=",
+    "answers": [
+      "np",
+      "n+p",
+      "p",
+      "n^{2}p"
+    ],
+    "correct": "np"
+  }
+]

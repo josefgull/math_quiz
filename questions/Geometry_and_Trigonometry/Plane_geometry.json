@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Sum\\;of\\;angles\\;in\\;a\\;triangle",
+    "answers": [
+      "180^{\\circ}",
+      "90^{\\circ}",
+      "360^{\\circ}",
+      "270^{\\circ}"
+    ],
+    "correct": "180^{\\circ}"
+  },
+  {
+    "question": "Area\\;of\\;rectangle\\;with\\;sides\\;a,b",
+    "answers": [
+      "ab",
+      "a+b",
+      "2(a+b)",
+      "\\frac{1}{2}ab"
+    ],
+    "correct": "ab"
+  },
+  {
+    "question": "If\\;two\\;angles\\;are\\;complementary,\\;they\\;sum\\;to",
+    "answers": [
+      "90^{\\circ}",
+      "180^{\\circ}",
+      "45^{\\circ}",
+      "60^{\\circ}"
+    ],
+    "correct": "90^{\\circ}"
+  },
+  {
+    "question": "Pythagoras\\;theorem\\;for\\;right\\;triangle",
+    "answers": [
+      "a^{2}+b^{2}=c^{2}",
+      "a+b=c",
+      "a^{2}-b^{2}=c^{2}",
+      "ab=c"
+    ],
+    "correct": "a^{2}+b^{2}=c^{2}"
+  },
+  {
+    "question": "Area\\;of\\;triangle\\;base\\;b\\;height\\;h",
+    "answers": [
+      "\\frac{1}{2}bh",
+      "bh",
+      "\\frac{1}{3}bh",
+      "b+h"
+    ],
+    "correct": "\\frac{1}{2}bh"
+  },
+  {
+    "question": "Interior\\;angle\\;sum\\;of\\;quadrilateral",
+    "answers": [
+      "360^{\\circ}",
+      "180^{\\circ}",
+      "540^{\\circ}",
+      "720^{\\circ}"
+    ],
+    "correct": "360^{\\circ}"
+  }
+]

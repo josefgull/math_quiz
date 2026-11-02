@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Calculate\\;2^{3}",
+    "answers": [
+      "8",
+      "6",
+      "9",
+      "4"
+    ],
+    "correct": "8"
+  },
+  {
+    "question": "\\log_{10}1000",
+    "answers": [
+      "3",
+      "2",
+      "10",
+      "100"
+    ],
+    "correct": "3"
+  },
+  {
+    "question": "Rule\\;for\\;a^{m}a^{n}",
+    "answers": [
+      "a^{m+n}",
+      "a^{m-n}",
+      "a^{mn}",
+      "a^{m/n}"
+    ],
+    "correct": "a^{m+n}"
+  },
+  {
+    "question": "Simplify\\; (2^{3})^{2}",
+    "answers": [
+      "64",
+      "16",
+      "36",
+      "8"
+    ],
+    "correct": "64"
+  },
+  {
+    "question": "If\\;\\ln x = 0,\\;then\\;x=?",
+    "answers": [
+      "1",
+      "e",
+      "0",
+      "-1"
+    ],
+    "correct": "1"
+  },
+  {
+    "question": "Change\\;of\\;base: \\;\\log_{a}b =",
+    "answers": [
+      "\\frac{\\ln b}{\\ln a}",
+      "\\ln(ab)",
+      "\\frac{\\ln a}{\\ln b}",
+      "\\ln b - \\ln a"
+    ],
+    "correct": "\\frac{\\ln b}{\\ln a}"
+  }
+]
