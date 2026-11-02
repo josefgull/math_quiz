@@ -8,6 +8,7 @@ const STRINGS = {
   en: {
     title: "Math Quiz",
     root: "Topics",
+    subjects: { Mathematics: "Mathematics", Physics: "Physics" },
     loading: "Loading questions…",
     loadError: "Could not load questions.json. Run python3 build_menu.py and serve the folder over http.",
     quizzes: (n) => `${n} ${n === 1 ? "quiz" : "quizzes"}`,
@@ -30,6 +31,7 @@ const STRINGS = {
   de: {
     title: "Mathe-Quiz",
     root: "Themen",
+    subjects: { Mathematics: "Mathematik", Physics: "Physik" },
     loading: "Fragen werden geladen…",
     loadError: "questions.json konnte nicht geladen werden. python3 build_menu.py ausführen und den Ordner über http ausliefern.",
     quizzes: (n) => `${n} ${n === 1 ? "Quiz" : "Quizze"}`,
@@ -285,6 +287,9 @@ function PillButton({ onClick, children, variant = "solid" }) {
 }
 
 // --- Menu --------------------------------------------------------------
+// Big tiles on the start page; any other top-level folder falls back to its first letter.
+const SUBJECT_SYMBOLS = { Mathematics: "∑", Physics: "Ψ" };
+
 function Menu({ trail, t, best }) {
   const folder = trail[trail.length - 1];
   const parentHash = trail.length > 1 ? hashFor(trail.slice(0, -1)) : null;
@@ -302,17 +307,39 @@ function Menu({ trail, t, best }) {
             {i > 0 && <span>›</span>}
             {i < trail.length - 1 ? (
               <a href={hashFor(trail.slice(0, i + 1))} className="underline underline-offset-2">
-                {i === 0 ? t.root : f.name}
+                {i === 0 ? t.root : (i === 1 && t.subjects[f.id]) || f.name}
               </a>
             ) : (
-              <span style={{ color: C.text, fontWeight: 600 }}>{i === 0 ? t.root : f.name}</span>
+              <span style={{ color: C.text, fontWeight: 600 }}>{i === 0 ? t.root : (i === 1 && t.subjects[f.id]) || f.name}</span>
             )}
           </span>
         ))}
       </div>
 
+      {trail.length === 1 && (
+        <div className="grid grid-cols-2 gap-3">
+          {folder.folders.map((f) => {
+            const [quizzes, questions] = countFolder(f);
+            return (
+              <a
+                key={f.id}
+                href={hashFor([...trail, f])}
+                className="mq-card flex flex-col items-center justify-center gap-2 px-3 py-6 rounded-xl text-center"
+                style={{ background: C.mint, border: `1.5px solid ${C.border}`, color: C.text }}
+              >
+                <span className="mq-display text-4xl leading-none">{SUBJECT_SYMBOLS[f.id] || f.name[0]}</span>
+                <span className="mq-body text-base font-semibold">{t.subjects[f.id] || f.name}</span>
+                <span className="mq-mono text-[10px]" style={{ color: C.mutedOnMint }}>
+                  {t.quizzes(quizzes)} · {t.questions(questions)}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      )}
+
       <div className="grid grid-cols-1 gap-2.5">
-        {folder.folders.map((f) => {
+        {trail.length > 1 && folder.folders.map((f) => {
           const [quizzes, questions] = countFolder(f);
           return (
             <a
@@ -636,12 +663,11 @@ export default function MathQuiz() {
 
       <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-2xl" style={{ background: C.background, border: `1px solid ${C.mint}` }}>
         <div className="px-5 py-4 flex items-center justify-between" style={{ background: C.mint, borderBottom: `1px solid ${C.border}` }}>
-          <a href="#/" className="mq-mono text-[10px] tracking-[0.2em]" style={{ color: C.text }}>
-            N° 3.14159
+          <a href="#/">
+            <h1 className="mq-display text-lg sm:text-xl" style={{ color: C.text }}>
+              {t.title}
+            </h1>
           </a>
-          <h1 className="mq-display text-lg sm:text-xl" style={{ color: C.text }}>
-            {t.title}
-          </h1>
           <LanguageSelector lang={lang} setLang={setLang} />
         </div>
 
